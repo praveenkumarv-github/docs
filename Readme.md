@@ -19,6 +19,8 @@ This Proof of Concept (POC) outlines the two approaches tested for setting up **
 - According to the official documentation, the subnet must be in the **same VNet** as the workspace or in a separate VNet accessible to the workspace.
 - Subnet size should be a minimum of **/28 in CIDR** notation.
 - This approach seems potentially viable, but certain issues need resolution from **Microsoft**, which has been informed and is working on it.
+  
+![1 databricks-Databricks](https://github.com/user-attachments/assets/84894662-c13b-4b64-bf91-753635534a38)
 
 ---
 
@@ -37,6 +39,9 @@ This Proof of Concept (POC) outlines the two approaches tested for setting up **
   - **Databricks VNET** (due to VNET injection)
   
 - **VNET resizing** is not possible without recreating it. Since the VNET has been split in half, this may necessitate recreating the entire Databricks environment. This happens because the **Databricks workspace (control plane)** is linked to the **Databricks VNET** via VNET injection.
+
+
+![2 databricks-Page-4](https://github.com/user-attachments/assets/7988d1b0-46e9-4393-b1c7-3c79e4685d87)
 
 ---
 
